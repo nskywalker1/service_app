@@ -126,8 +126,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# Default primary key field type
-# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
+CELERY_BROKER_URL = 'redis://redis:6379/0'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
