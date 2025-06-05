@@ -142,3 +142,12 @@ LOGGING = {
         }
     }
 }
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django_redis.cache.RedisCache',
+        'LOCATION': 'redis://redis:6379/1',  # Use the appropriate Redis server URL
+    }
+}
+
+PRICE_CACHE = 'price_cache'
